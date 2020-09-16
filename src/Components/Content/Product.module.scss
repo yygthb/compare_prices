@@ -1,0 +1,96 @@
+.product {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+
+  // background-color: rgba(255, 160, 122, 0.193);
+
+  // border-bottom: 1px solid lightgrey;
+
+  .row {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    // flex-direction: column;
+    font-size: 1.3rem;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+
+    label {
+      width: 30%;
+      text-align: center;
+    }
+    input {
+      width: 70%;
+      padding: 0 10px;
+      height: 40px;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+
+      outline: none;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+
+      &::placeholder {
+        color: rgba(211, 211, 211, 0.5);
+      }
+    }
+
+    .result {
+      min-width: 50%;
+      min-height: 52px;
+      padding: 5px;
+      justify-content: center;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      font-size: 1.9rem;
+      font-weight: bold;
+      background-color: white;
+    }
+
+    .lowest {
+      background-color: rgba(144, 238, 144, 0.2);
+    }
+  }
+
+  .button__removeprod {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 2.05rem;
+    border: none;
+    position: absolute;
+    top: -10px;
+    right: 12px;
+
+    transform: rotate(45deg);
+
+    
+    color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0);
+
+    outline: none;
+
+    &:active {
+      color: rgba(255, 0, 0, 1);
+    }
+  }
+
+  &::after {
+    content: "";
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    // justify-self: ;
+    background-color: rgba(211, 211, 211, 0.5);
+    width: 50%;
+    height: 2px;
+  }
+}
+
+.lowest {
+  background-color: rgba(144, 238, 144, 0.2);
+}
