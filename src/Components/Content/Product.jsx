@@ -4,8 +4,8 @@ import style from './Product.module.scss'
 
 export default function Product(props) {
   const product = props.product
+  const colored = product.id === props.coloredId
   const removeProd = props.removeProd
-  // const [priceValue, setPriceValue] = React.useState('')
 
   return (
     // <div key={product.id} className={`${style.product} ${product.isLowest ? style.lowest : ''}`} >
@@ -36,7 +36,7 @@ export default function Product(props) {
       </div>
 
       <div className={style.row}>
-        <div className={`${style.result} ${product.isLowest ? style.lowest : ''}`}>
+        <div className={`${style.result} ${colored ? style.lowest : ''}`}>
           {/* RESULT {props.index} */}
           {product.result}
         </div>

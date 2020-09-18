@@ -17,6 +17,7 @@ export default function Content(props) {
             key={p.id}
             product={p}
             index={index}
+            coloredId={props.coloredId}
             removeProd={props.removeProd}
             onHandlePriceChange={props.onHandlePriceChange}
             onHandleWeightChange={props.onHandleWeightChange}

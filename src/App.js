@@ -9,22 +9,20 @@ import style from './App.module.scss'
 
 function App() {
   const [products, setProd] = React.useState([
-    // { id: 1, price: 125, weight: 750, result: 16.66, isLowest: undefined },
-    // { id: 2, price: 130, weight: 800, result: 16.25, isLowest: undefined },
-    // { id: 3, price: 150, weight: 880, result: 17.04, isLowest: undefined },
+    { id: 0, price: '', weight: '', result: '' },
+    // { id: 1, price: 111, weight: 800, result: 13.87 },
+    // { id: 2, price: 130, weight: 800, result: 16.25 },
   ])
-  const [lowestId, setLowestId] = React.useState('')
+  const [coloredId, setColorId] = React.useState('')
 
   function addProd() {
     setProd(
-      products.concat([
-        {
-          id: Date.now(),
-          price: "",
-          weight: "",
-          result: "",
-        }
-      ])
+      [{
+        id: Date.now(),
+        price: "",
+        weight: "",
+        result: "",
+      }, ...products]
     )
   }
 
@@ -41,22 +39,11 @@ function App() {
 
   function showLowest() {
     const sup = []
-    products.map(product => {
-      product.isLowest = false
+    products.forEach(product => {
       sup.push({ id: product.id, result: product.result })
     })
-    const lowestId = sortByResult(sup)
-    // console.log('products: ', products)
-    // console.log('sup: ', sup)
-
-    setProd(
-      products.map(product => {
-        if (product.id === lowestId) {
-          product.isLowest = true
-        }
-        return product
-      })
-    )
+    sortByResult(sup)
+    return sup[0].id
   }
 
   function onHandlePriceChange(id, value) {
@@ -66,7 +53,9 @@ function App() {
           product.price = value
           product.result = +calculate(product.price, product.weight)
         }
-        showLowest()
+        setColorId(
+          showLowest()
+        )
         return product
       })
     )
@@ -79,46 +68,57 @@ function App() {
           product.weight = value
           product.result = +calculate(product.price, product.weight)
         }
-        showLowest()
+        setColorId(
+          showLowest()
+        )
         return product
       })
     )
   }
 
-  function test() {
-    console.log('ACCEPTED')
-  }
-
   function removeProd(id) {
     setProd(
-      // products.filter(p => p.id !== id)
-      products.filter(p => {
-        if (p.id !== id) {
-          return p
-        }
-      })
+      products.filter(p => p.id !== id)
+      // products.filter(p => {
+      //   if (p.id !== id) {
+      //     return p
+      //   }
+      // })
     )
   }
 
+  useEffect(() => {
+    // console.log('use effect /colored id: ', coloredId)
+  })
+
   function removeAll() {
     setProd(
-      products.filter(product => false)
+      [{
+        id: Date.now(),
+        price: "",
+        weight: "",
+        result: "",
+      }]
     )
   }
 
   function showInfo() {
-    console.log('info')
+    console.log('--------------------')
+    console.log('      info products: ', products)
+    console.log('      info coloredId: ', coloredId)
+    console.log('--------------------')
   }
 
-  useEffect(() => {
-    console.log('use effect')
-  })
+  // function test() {
+  //   console.log('ACCEPTED')
+  // }
 
   return (
     <div className={style.wrapper}>
       <Header showInfo={showInfo} />
       <Content
         products={products}
+        coloredId={coloredId}
         addProd={addProd}
         removeProd={removeProd}
         onHandlePriceChange={onHandlePriceChange}
