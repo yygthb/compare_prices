@@ -8,7 +8,7 @@
     "javascript"
   ],
   "author": "Youri Ya <yy.ainu@gmail.com>",
-  "homepage": "https://github.com/yygthb/compare_prices",
+  "homepage": "https://yygthb/github.io/compare_prices",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

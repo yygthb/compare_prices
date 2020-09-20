@@ -15,8 +15,7 @@ function App() {
     // { id: 2, price: 130, weight: 800, result: 16.25 },
   ])
   const [coloredId, setColorId] = React.useState('')
-  // const [modalVisibility, setModalVisibility] = React.useState('hidden')
-  const [modalVisibility, setModalVisibility] = React.useState('visible')
+  const [modalVisibility, setModalVisibility] = React.useState('hidden')
 
   function addProd() {
     setProd(
