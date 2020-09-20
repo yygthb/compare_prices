@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/github.io/compare_prices/static/css/main.c9ae983f.chunk.css",
-    "main.js": "/github.io/compare_prices/static/js/main.df1741a8.chunk.js",
-    "main.js.map": "/github.io/compare_prices/static/js/main.df1741a8.chunk.js.map",
-    "runtime-main.js": "/github.io/compare_prices/static/js/runtime-main.92b282f2.js",
-    "runtime-main.js.map": "/github.io/compare_prices/static/js/runtime-main.92b282f2.js.map",
-    "static/js/2.f858dd09.chunk.js": "/github.io/compare_prices/static/js/2.f858dd09.chunk.js",
-    "static/js/2.f858dd09.chunk.js.map": "/github.io/compare_prices/static/js/2.f858dd09.chunk.js.map",
-    "index.html": "/github.io/compare_prices/index.html",
-    "precache-manifest.bc5ea459fd92d93c0672f9254907a5b0.js": "/github.io/compare_prices/precache-manifest.bc5ea459fd92d93c0672f9254907a5b0.js",
-    "service-worker.js": "/github.io/compare_prices/service-worker.js",
-    "static/css/main.c9ae983f.chunk.css.map": "/github.io/compare_prices/static/css/main.c9ae983f.chunk.css.map",
-    "static/js/2.f858dd09.chunk.js.LICENSE.txt": "/github.io/compare_prices/static/js/2.f858dd09.chunk.js.LICENSE.txt",
-    "static/media/App.module.scss": "/github.io/compare_prices/static/media/Montserrat-Medium.c8b6e083.ttf",
-    "static/media/image_info2.jpg": "/github.io/compare_prices/static/media/image_info2.f87b10ce.jpg"
+    "main.css": "/compare_prices/static/css/main.6fab4055.chunk.css",
+    "main.js": "/compare_prices/static/js/main.d20eb9a9.chunk.js",
+    "main.js.map": "/compare_prices/static/js/main.d20eb9a9.chunk.js.map",
+    "runtime-main.js": "/compare_prices/static/js/runtime-main.1f6afa57.js",
+    "runtime-main.js.map": "/compare_prices/static/js/runtime-main.1f6afa57.js.map",
+    "static/js/2.f858dd09.chunk.js": "/compare_prices/static/js/2.f858dd09.chunk.js",
+    "static/js/2.f858dd09.chunk.js.map": "/compare_prices/static/js/2.f858dd09.chunk.js.map",
+    "index.html": "/compare_prices/index.html",
+    "precache-manifest.f06f7b0bd5315dbeb4a58bf54151511b.js": "/compare_prices/precache-manifest.f06f7b0bd5315dbeb4a58bf54151511b.js",
+    "service-worker.js": "/compare_prices/service-worker.js",
+    "static/css/main.6fab4055.chunk.css.map": "/compare_prices/static/css/main.6fab4055.chunk.css.map",
+    "static/js/2.f858dd09.chunk.js.LICENSE.txt": "/compare_prices/static/js/2.f858dd09.chunk.js.LICENSE.txt",
+    "static/media/App.module.scss": "/compare_prices/static/media/Montserrat-Medium.c8b6e083.ttf",
+    "static/media/image_info2.jpg": "/compare_prices/static/media/image_info2.f87b10ce.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.92b282f2.js",
+    "static/js/runtime-main.1f6afa57.js",
     "static/js/2.f858dd09.chunk.js",
-    "static/css/main.c9ae983f.chunk.css",
-    "static/js/main.df1741a8.chunk.js"
+    "static/css/main.6fab4055.chunk.css",
+    "static/js/main.d20eb9a9.chunk.js"
   ]
 }
