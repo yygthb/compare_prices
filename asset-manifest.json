@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/compare_prices/static/css/main.6fab4055.chunk.css",
+    "main.css": "/compare_prices/static/css/main.62c51950.chunk.css",
     "main.js": "/compare_prices/static/js/main.d20eb9a9.chunk.js",
     "main.js.map": "/compare_prices/static/js/main.d20eb9a9.chunk.js.map",
     "runtime-main.js": "/compare_prices/static/js/runtime-main.1f6afa57.js",
@@ -8,9 +8,9 @@
     "static/js/2.f858dd09.chunk.js": "/compare_prices/static/js/2.f858dd09.chunk.js",
     "static/js/2.f858dd09.chunk.js.map": "/compare_prices/static/js/2.f858dd09.chunk.js.map",
     "index.html": "/compare_prices/index.html",
-    "precache-manifest.f06f7b0bd5315dbeb4a58bf54151511b.js": "/compare_prices/precache-manifest.f06f7b0bd5315dbeb4a58bf54151511b.js",
+    "precache-manifest.19f4c04a67279f060e4a45e6117da897.js": "/compare_prices/precache-manifest.19f4c04a67279f060e4a45e6117da897.js",
     "service-worker.js": "/compare_prices/service-worker.js",
-    "static/css/main.6fab4055.chunk.css.map": "/compare_prices/static/css/main.6fab4055.chunk.css.map",
+    "static/css/main.62c51950.chunk.css.map": "/compare_prices/static/css/main.62c51950.chunk.css.map",
     "static/js/2.f858dd09.chunk.js.LICENSE.txt": "/compare_prices/static/js/2.f858dd09.chunk.js.LICENSE.txt",
     "static/media/App.module.scss": "/compare_prices/static/media/Montserrat-Medium.c8b6e083.ttf",
     "static/media/image_info2.jpg": "/compare_prices/static/media/image_info2.f87b10ce.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.1f6afa57.js",
     "static/js/2.f858dd09.chunk.js",
-    "static/css/main.6fab4055.chunk.css",
+    "static/css/main.62c51950.chunk.css",
     "static/js/main.d20eb9a9.chunk.js"
   ]
 }
