@@ -4,9 +4,9 @@ import style from './Header.module.scss'
 
 export default function Header(props) {
   return (
-    <div className={style.header}>
+    <header className={style.header}>
       <h1>
-        Сравнение цен
+        Сравни цену
         {/* XXXXXXXXXXXX */}
       </h1>
       <button
@@ -14,6 +14,6 @@ export default function Header(props) {
         title="справка"
         onClick={() => props.showInfo()}
       >i</button>
-    </div>
+    </header>
   )
 }

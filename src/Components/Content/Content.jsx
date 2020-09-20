@@ -9,7 +9,7 @@ export default function Content(props) {
   const products = props.products
 
   return (
-    <div className={style.content}>
+    <main className={style.content}>
 
       {
         products.map((p, index) => {
@@ -26,6 +26,6 @@ export default function Content(props) {
       }
 
       <ProdAddButton addProd={props.addProd} />
-    </div>
+    </main>
   )
 }

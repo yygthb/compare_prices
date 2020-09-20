@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Header from './Components/Header/Header'
 import Content from './Components/Content/Content'
 import Footer from './Components/Footer/Footer'
+import ModalInfo from './Components/Modal/ModalInfo';
 
 // import './App.css';
 import style from './App.module.scss'
@@ -14,6 +15,8 @@ function App() {
     // { id: 2, price: 130, weight: 800, result: 16.25 },
   ])
   const [coloredId, setColorId] = React.useState('')
+  // const [modalVisibility, setModalVisibility] = React.useState('hidden')
+  const [modalVisibility, setModalVisibility] = React.useState('visible')
 
   function addProd() {
     setProd(
@@ -102,11 +105,17 @@ function App() {
     )
   }
 
-  function showInfo() {
-    console.log('--------------------')
-    console.log('      info products: ', products)
-    console.log('      info coloredId: ', coloredId)
-    console.log('--------------------')
+  function showModal() {
+    // console.log('--------------------')
+    // console.log('      info products: ', products)
+    // console.log('      info coloredId: ', coloredId)
+    // console.log('--------------------')
+
+    setModalVisibility('visible')
+  }
+
+  function closeModal() {
+    setModalVisibility('hidden')
   }
 
   // function test() {
@@ -115,7 +124,7 @@ function App() {
 
   return (
     <div className={style.wrapper}>
-      <Header showInfo={showInfo} />
+      <Header showInfo={showModal} />
       <Content
         products={products}
         coloredId={coloredId}
@@ -126,6 +135,10 @@ function App() {
       />
       <Footer
         removeAll={removeAll}
+      />
+      <ModalInfo 
+        modalVisibility={modalVisibility}
+        closeModal={closeModal}
       />
     </div>
   );

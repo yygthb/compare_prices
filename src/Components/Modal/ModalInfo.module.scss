@@ -1,0 +1,75 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: .3);
+
+  padding: 1rem;
+  // display: box;
+
+  // visibility: hidden;
+
+  .modal {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .modal__header {
+      text-align: center;
+      margin-bottom: .5rem;
+    }
+
+    .modal__content {
+      text-align: start;
+      margin-bottom: .5rem;
+      font-size: .9rem;
+      
+      p {
+        padding: 0 .5rem .5rem;
+
+        span {
+          font-weight: bold;
+          color: rgba(144, 238, 144, 0.9);
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .modal__footer {
+      display: flex;
+      justify-content: center;
+
+      button {
+        padding: 5px 17px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        background-color: white;
+        color: lightgrey;
+        outline: none;
+        font-size: 1em;
+
+        &:hover {
+          background-color: rgba(211, 211, 211, 0.3);
+          border: 1px solid rgba(211, 211, 211, 0.3);
+          color: white;
+        }
+        &:active {
+          background-color: lightgrey;
+          color: white;
+        }
+      }
+    }
+  }
+}
