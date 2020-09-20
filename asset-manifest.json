@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/github.io/compare_prices/static/css/main.c9ae983f.chunk.css",
-    "main.js": "/github.io/compare_prices/static/js/main.3c2798d7.chunk.js",
-    "main.js.map": "/github.io/compare_prices/static/js/main.3c2798d7.chunk.js.map",
+    "main.js": "/github.io/compare_prices/static/js/main.df1741a8.chunk.js",
+    "main.js.map": "/github.io/compare_prices/static/js/main.df1741a8.chunk.js.map",
     "runtime-main.js": "/github.io/compare_prices/static/js/runtime-main.92b282f2.js",
     "runtime-main.js.map": "/github.io/compare_prices/static/js/runtime-main.92b282f2.js.map",
     "static/js/2.f858dd09.chunk.js": "/github.io/compare_prices/static/js/2.f858dd09.chunk.js",
     "static/js/2.f858dd09.chunk.js.map": "/github.io/compare_prices/static/js/2.f858dd09.chunk.js.map",
     "index.html": "/github.io/compare_prices/index.html",
-    "precache-manifest.2c128c511152a26937be04fdb6ff8e2d.js": "/github.io/compare_prices/precache-manifest.2c128c511152a26937be04fdb6ff8e2d.js",
+    "precache-manifest.bc5ea459fd92d93c0672f9254907a5b0.js": "/github.io/compare_prices/precache-manifest.bc5ea459fd92d93c0672f9254907a5b0.js",
     "service-worker.js": "/github.io/compare_prices/service-worker.js",
     "static/css/main.c9ae983f.chunk.css.map": "/github.io/compare_prices/static/css/main.c9ae983f.chunk.css.map",
     "static/js/2.f858dd09.chunk.js.LICENSE.txt": "/github.io/compare_prices/static/js/2.f858dd09.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.92b282f2.js",
     "static/js/2.f858dd09.chunk.js",
     "static/css/main.c9ae983f.chunk.css",
-    "static/js/main.3c2798d7.chunk.js"
+    "static/js/main.df1741a8.chunk.js"
   ]
 }
