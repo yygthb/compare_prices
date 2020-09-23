@@ -1,6 +1,10 @@
+@import "./variables/colors.module.scss";
+
 @font-face {
   font-family: Montserrat;
-  src: url(./fonts/Montserrat/Montserrat-Medium.ttf)
+  src: url(./fonts/Montserrat/Montserrat-Medium.ttf);
+  font-family: SanFrancisco;
+  src: url(./fonts/SanFrancisco/SFUIText-Light.otf);
 }
 
 * {
@@ -11,8 +15,11 @@
 
 html, body {
   height: 100%;
-  font-family: Montserrat;
-  font-size: 1.1rem;
+  // font-family: Montserrat;
+  font-family: SanFrancisco;
+  // font-size: .9rem;
+  color: $textColor;
+  background-color: $backgroundColor;
 }
 
 // FLEX
@@ -23,7 +30,7 @@ html, body {
   min-height: 100vh;
 
   header {
-    flex: 0 0 60px;
+    flex: 0 0 50px;
   }
   main {
     flex: 0 0 auto;

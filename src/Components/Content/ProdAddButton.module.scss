@@ -1,21 +1,23 @@
+@import "../../variables/colors.module.scss";
+
 .button_addprod {
-  margin: 10px;
   padding: 0;
   width: 40px;
   height: 40px;
   border: none;
   border-radius: 50%;
   color: white;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: bold;
+  text-align: center;
 
-  background-color: rgba(144, 238, 144, 0.5);
+  background-color: $addColorThirdly;
   outline: none;
 
   &:hover {
-    background-color: rgba(144, 238, 144, 0.6);
+    background-color: $addColorSecondary;
   }
   &:active {
-    background-color: rgba(144, 238, 144, 0.99);
+    background-color: $addColorPrimary;
   }
 }
