@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cad5dd42cef05c670ab4dafd886944bb",
+    "revision": "b814af93a60ff7b3dc9aa750bc1984c9",
     "url": "/compare_prices/index.html"
   },
   {
-    "revision": "132f73ccb5387970228b",
-    "url": "/compare_prices/static/css/main.62c51950.chunk.css"
+    "revision": "714d10761420f80adab5",
+    "url": "/compare_prices/static/css/main.8de7c17a.chunk.css"
   },
   {
     "revision": "f8c3202dfb5b3a573e76",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/compare_prices/static/js/2.f858dd09.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "132f73ccb5387970228b",
-    "url": "/compare_prices/static/js/main.d20eb9a9.chunk.js"
+    "revision": "714d10761420f80adab5",
+    "url": "/compare_prices/static/js/main.64452561.chunk.js"
   },
   {
     "revision": "5ac96f5b97578f95d476",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c8b6e083af3f94009801989c3739425e",
     "url": "/compare_prices/static/media/Montserrat-Medium.c8b6e083.ttf"
+  },
+  {
+    "revision": "433cdd63339cb887e50d1201fdd84afd",
+    "url": "/compare_prices/static/media/SFUIText-Light.433cdd63.otf"
   },
   {
     "revision": "f87b10ceb29557594395a464b34738ac",
