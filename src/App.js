@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Header from './Components/Header/Header'
 import Content from './Components/Content/Content'
 import Footer from './Components/Footer/Footer'
-import ModalInfo from './Components/Modal/ModalInfo';
+import ModalInfo from './Components/Modal/ModalInfo'
 
 // import './App.css';
 import style from './App.module.scss'
@@ -49,33 +49,37 @@ function App() {
   }
 
   function onHandlePriceChange(id, value) {
-    setProd(
-      products.map(product => {
-        if (product.id === id) {
-          product.price = value
-          product.result = +calculate(product.price, product.weight)
-        }
-        setColorId(
-          showLowest()
-        )
-        return product
-      })
-    )
+    if (value >= 0) {
+      setProd(
+        products.map(product => {
+          if (product.id === id) {
+            product.price = value
+            product.result = +calculate(product.price, product.weight)
+          }
+          setColorId(
+            showLowest()
+          )
+          return product
+        })
+      )
+    }
   }
 
   function onHandleWeightChange(id, value) {
-    setProd(
-      products.map(product => {
-        if (product.id === id) {
-          product.weight = value
-          product.result = +calculate(product.price, product.weight)
-        }
-        setColorId(
-          showLowest()
-        )
-        return product
-      })
-    )
+    if (value >= 0) {
+      setProd(
+        products.map(product => {
+          if (product.id === id) {
+            product.weight = value
+            product.result = +calculate(product.price, product.weight)
+          }
+          setColorId(
+            showLowest()
+          )
+          return product
+        })
+      )
+    }
   }
 
   function removeProd(id) {
@@ -117,10 +121,6 @@ function App() {
     setModalVisibility('hidden')
   }
 
-  // function test() {
-  //   console.log('ACCEPTED')
-  // }
-
   return (
     <div className={style.wrapper}>
       <Header showInfo={showModal} />
@@ -135,7 +135,7 @@ function App() {
       <Footer
         removeAll={removeAll}
       />
-      <ModalInfo 
+      <ModalInfo
         modalVisibility={modalVisibility}
         closeModal={closeModal}
       />
