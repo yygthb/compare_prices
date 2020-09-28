@@ -122,7 +122,8 @@ function App() {
   }
 
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} data-theme="kotaku">
+    {/* <div className={style.wrapper} data-theme="light">  */}
       <Header showInfo={showModal} />
       <Content
         products={products}

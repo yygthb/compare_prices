@@ -14,7 +14,7 @@ export default function Product(props) {
         <label htmlFor={"price" + props.index}>цена</label>
         <input
           id={"price" + props.index}
-          type="text"
+          type="number"
           placeholder="125 (р)"
           value={product.price}
           onChange={event => props.onHandlePriceChange(product.id, event.target.value)}
@@ -28,7 +28,7 @@ export default function Product(props) {
         <label htmlFor={"weight" + props.index}>вес</label>
         <input
           id={"weight" + props.index}
-          type="text"
+          type="number"
           placeholder="800 (гр)"
           value={product.weight}
           onChange={event => props.onHandleWeightChange(product.id, event.target.value)}

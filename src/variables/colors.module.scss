@@ -1,22 +1,22 @@
 // $borderColor: #E3DFDC;
 
-// // https://www.colourlovers.com/palette/1930/cheer_up_emo_kid
-$colorPrimary: #C7F464;
-$colorSecondary: #556270;
-$infoColor: #4ECDC4;
-$cancelColor: #C44D58;
-
 // // https://www.colourlovers.com/palette/848743/(_%E2%80%9D_)
 // $colorPrimary: #8A9B0F;
 // $colorSecondary: #490A3D;
 // $infoColor: #E97F02;
 // $cancelColor: #BD1550;
 
-// // // https://www.colourlovers.com/palette/940086/mystery_machine
-// $colorPrimary: #D3CE3D;
-// $colorSecondary: #554236;
-// $infoColor: #60B99A;
-// $cancelColor: #F77825;
+// // color theme_Coasters
+// $colorPrimary:#939ABF;
+// $colorSecondary: #404354;
+// $infoColor: #60606C;
+// $cancelColor:#D9BB96;
+
+// https://www.colourlovers.com/palette/59489/Kotaku
+$colorPrimary: #83A300;
+$colorSecondary: #333333;
+$infoColor: #E21B5A;
+$cancelColor: #9E0C39;
 
 $addColorPrimary: $colorPrimary;
 $addColorSecondary: rgba($color: $addColorPrimary, $alpha: .75);
@@ -24,6 +24,5 @@ $addColorThirdly: rgba($color: $addColorPrimary, $alpha: .7);
 
 $borderColor: rgba($color: $colorPrimary, $alpha: .2);;
 
-// $backgroundColor: rgba($color: #7FA085, $alpha: .01);
 $backgroundColor: white;
 $textColor: $colorSecondary;
