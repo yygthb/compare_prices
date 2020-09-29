@@ -1,31 +1,61 @@
-@import "../../variables/colors.module.scss";
-
 .footer {
   padding: 5px;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--backgroundBody);
+  border-top: 1px solid var(--colorCancel);
 
-  justify-content: flex-end;
-  align-items: center;
+  .themes {
+    display: flex;
+    font-size: .85rem;
+    color: var(--colorCancel);
+    
+    span {
+      opacity: .5;
+    }
+
+    .theme__item {
+      display: flex;
+      min-width: 20px;
+      height: 20px;
+      margin: 10px 7px;
+
+      &.kotaku {
+        background-color: var(--kotaku);
+      }
+
+      &.coasters {
+        background-color: var(--coasters);
+      }
+
+      &.sugari {
+        background-color: var(--sugari);
+      }
+    }
+  }
 
   .button__reset {
+    min-height: 30px;
+
     padding: 7px 10px;
-    background-color: $backgroundColor;
-    border: 1.5px solid $cancelColor;
-    border-radius: 5px;
-    color: $cancelColor;
+    background-color: var(--backgroundBody);
+    border: 1.5px solid var(--colorCancel);
+    border-radius: 7px;
+    color: var(--colorCancel);
     font-size: 1rem;
-    // outline: none;
+    outline: none;
 
     &:focus {
       outline: none;
     }
     &:hover {
-      background-color: rgba($color: $cancelColor, $alpha: .1);
-      color: $cancelColor;
+      background-color: var(--colorCancelLight);
     }
     &:active {
-      background-color: $cancelColor;
-      color: $backgroundColor;
+      background-color: var(--colorCancel);
+      color: var(--backgroundInput);
     }
   }
 }

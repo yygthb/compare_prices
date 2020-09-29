@@ -1,3 +1,5 @@
+$buttonColor: rgba($color: #000000, $alpha: .6);
+
 .overlay {
   position: fixed;
   top: 0;
@@ -7,40 +9,31 @@
   background-color: rgba($color: #000000, $alpha: .3);
 
   padding: 1rem;
-  // display: box;
-
-  // visibility: hidden;
 
   .modal {
     max-width: 500px;
     margin: 0 auto;
     padding: .5rem;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
+    border: 1px solid rgba($color: #000000, $alpha: .3);
+    border-radius: 10px;
     background-color: white;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    color: black;
-
-    .modal__header {
-      text-align: center;
-      margin-bottom: .5rem;
-    }
-
     .modal__content {
       text-align: start;
       margin-bottom: .5rem;
-      font-size: .9rem;
+      font-size: 1.05rem;
+      color: rgba(0, 0, 0, 0.8);
       
       p {
         padding: 0 .5rem .5rem;
 
         span {
           font-weight: bold;
-          color: rgba(144, 238, 144, 0.9);
+          color: #8A9B0F;
         }
       }
 
@@ -49,26 +42,31 @@
       }
     }
 
+    .modal__author {
+      margin-bottom: 20px;
+      font-size: .7rem;
+      color: #00000030;
+      text-align: end;
+    }
+
     .modal__footer {
       display: flex;
       justify-content: center;
 
       button {
         padding: 5px 17px;
-        border: 1px solid lightgrey;
+        border: 1.5px solid $buttonColor;
         border-radius: 5px;
         background-color: white;
-        color: lightgrey;
+        color: $buttonColor;
         outline: none;
-        font-size: 1em;
+        font-size: 1.2rem;
 
         &:hover {
-          background-color: rgba(211, 211, 211, 0.3);
-          border: 1px solid rgba(211, 211, 211, 0.3);
-          color: white;
+          background-color: rgba(#aeaeae, 0.3);
         }
         &:active {
-          background-color: lightgrey;
+          background-color: $buttonColor;
           color: white;
         }
       }

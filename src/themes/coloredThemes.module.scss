@@ -1,0 +1,59 @@
+:root {
+  body[data-theme="kotaku"] {
+    --colorInfo: #E21B5A;
+    --colorInfoLight: #ffe6ee;
+    --backgroundBody: #fffdfe;
+    --backgroundInput: white;
+
+    --colorPrimaryActive: #8A9B0F;
+    --colorPrimaryHover: #afc029;
+    --colorPrimary: #b7c54d;
+    --colorPrimaryBorder: #dde4a7;
+
+    --colorTextBody: #444444;
+    --colorTextPlaceholder: #33333325;
+
+    --colorCancel: #9E0C39;
+    --colorCancelLight: #9e0c3820;
+  }
+
+  body[data-theme="coasters"] {
+    --colorInfo: #60606C;
+    --colorInfoLight: #e7e7ed;
+    --backgroundBody: #f9f9fc;
+    --backgroundInput: white;
+
+    --colorPrimaryActive: #757eac;
+    --colorPrimaryHover: #7d86b3;
+    --colorPrimary: #939ABF;
+    --colorPrimaryBorder: #b1b8da;
+
+    --colorTextBody: #404354;
+    --colorTextPlaceholder: #40435425;
+
+    --colorCancel: #D9BB96;
+    --colorCancelLight: #fdf9f3;
+  }
+
+  body[data-theme="sugari"] {
+    --colorInfo: #E97F02;
+    --colorInfoLight: #faefe1;
+    --backgroundBody: #fffdfc;
+    --backgroundInput: white;
+
+    --colorPrimaryActive: #758217;
+    --colorPrimaryHover: #7f8d12;
+    --colorPrimary: #8A9B0F;
+    --colorPrimaryBorder: #b8c93a;
+
+    --colorTextBody: #490A3D;
+    --colorTextPlaceholder: #490A3D25;
+
+    --colorCancel: #BD1550;
+    --colorCancelLight: #fcebf1;
+  }
+
+  --kotaku: #E21B5A;
+  --coasters: #60606C;
+  --sugari: #E97F02;
+}

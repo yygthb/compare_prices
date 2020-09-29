@@ -9,10 +9,16 @@ import ModalInfo from './Components/Modal/ModalInfo'
 import style from './App.module.scss'
 
 function App() {
+
+  const theme = localStorage.getItem('theme')
+  if (theme) {
+    document.body.dataset.theme = theme
+  }
+
   const [products, setProd] = React.useState([
     { id: 0, price: '', weight: '', result: '' },
-    // { id: 1, price: 111, weight: 800, result: 13.87 },
-    // { id: 2, price: 130, weight: 800, result: 16.25 },
+    // { id: 1, price: '', weight: '', result: '' },
+    // { id: 2, price: '', weight: '', result: '' },
   ])
   const [coloredId, setColorId] = React.useState('')
   const [modalVisibility, setModalVisibility] = React.useState('hidden')
@@ -85,17 +91,8 @@ function App() {
   function removeProd(id) {
     setProd(
       products.filter(p => p.id !== id)
-      // products.filter(p => {
-      //   if (p.id !== id) {
-      //     return p
-      //   }
-      // })
     )
   }
-
-  useEffect(() => {
-    // console.log('use effect /colored id: ', coloredId)
-  })
 
   function removeAll() {
     setProd(
@@ -122,8 +119,7 @@ function App() {
   }
 
   return (
-    <div className={style.wrapper} data-theme="kotaku">
-    {/* <div className={style.wrapper} data-theme="light">  */}
+    <div className={style.wrapper}>
       <Header showInfo={showModal} />
       <Content
         products={products}

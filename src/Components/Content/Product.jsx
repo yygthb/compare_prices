@@ -36,8 +36,10 @@ export default function Product(props) {
       </div>
 
       <div className={style.row}>
+        {/* <label className={style.label__info}>
+          цена за 100гр
+        </label> */}
         <div className={`${style.result} ${colored ? style.lowest : ''}`}>
-          {/* RESULT {props.index} */}
           {product.result}
         </div>
       </div>

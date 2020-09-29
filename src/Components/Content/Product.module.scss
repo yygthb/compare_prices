@@ -1,24 +1,23 @@
-@import "../../variables/colors.module.scss";
-
 .product {
-  // padding-top: 5px;
   padding-bottom: 10px;
   position: relative;
+
+  margin-bottom: 10px;
 
   .row {
     padding-right: 5px;
     padding-left: 5px;
     margin-bottom: 3px;
     display: flex;
-    // flex-direction: column;
     justify-content: flex-end;
     align-content: center;
     align-items: center;
 
     label {
       font-size: 1.2rem;
-      opacity: .8;
-      padding-bottom: 0px;
+      font-weight: 600;
+      opacity: .6;
+      // padding-bottom: 0px;
       text-align: center;
       width: 30%;
     }
@@ -28,30 +27,35 @@
       height: 30px;
       font-size: 1.5rem;
       letter-spacing: 2px;
-      color: $textColor;
+      color: var(--colorTextBody);
       outline: none;
-      border: 1.5px solid $borderColor;
-      border-radius: 5px;
+      border: 1.5px solid var(--colorPrimaryBorder);
+      border-radius: 10px;
 
       &::placeholder {
-        color: rgba($textColor, 0.15);
+        color: var(--colorTextPlaceholder);
       }
     }
 
+    .label__info {
+      font-size: .85rem;
+      margin-right: 10px;
+      color: rgba(#490A3D, .8)
+    }
     .result {
       min-width: 50%;
       min-height: 34px;
-      padding: 1px;
-      justify-content: center;
-      border: 1.5px solid $borderColor;
+      // padding: 1px;
+      text-align: center;
+      border: 1.5px solid var(--colorPrimaryBorder);
       border-radius: 10px;
       font-size: 1.5rem;
       font-weight: bold;
-      background-color: white;
+      background-color: var(--backgroundInput);
     }
 
     .lowest {
-      background-color: rgba($color: $addColorThirdly, $alpha: .2);
+      background-color: var(--colorPrimaryBorder);
     }
   }
 
@@ -70,7 +74,7 @@
     transform: rotate(45deg);
 
     color: rgba(255, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0);
+    background-color: var(--backgroundInput);
 
     outline: none;
 
@@ -87,7 +91,7 @@
     justify-content: space-around;
     display: flex;
     
-    background-color: rgba($borderColor, 0.5);
+    background-color: var(--colorPrimary);
     width: 50%;
     height: 2px;
   }
