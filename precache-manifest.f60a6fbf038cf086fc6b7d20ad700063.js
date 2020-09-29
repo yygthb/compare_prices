@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d8fc901f286e9dd187024c56dd13fb1",
+    "revision": "8a1f45d89f153b40ce5587ba81d3d3d0",
     "url": "/compare_prices/index.html"
   },
   {
-    "revision": "09ae9aec7eefb1e4f6b5",
-    "url": "/compare_prices/static/css/main.910b3298.chunk.css"
+    "revision": "b47026c23eafb11d2697",
+    "url": "/compare_prices/static/css/main.20db91e5.chunk.css"
   },
   {
-    "revision": "f8c3202dfb5b3a573e76",
-    "url": "/compare_prices/static/js/2.f858dd09.chunk.js"
+    "revision": "3c723cd622137d6c2780",
+    "url": "/compare_prices/static/js/2.d1504845.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/compare_prices/static/js/2.f858dd09.chunk.js.LICENSE.txt"
+    "url": "/compare_prices/static/js/2.d1504845.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "09ae9aec7eefb1e4f6b5",
-    "url": "/compare_prices/static/js/main.bb9a862d.chunk.js"
+    "revision": "b47026c23eafb11d2697",
+    "url": "/compare_prices/static/js/main.2848d489.chunk.js"
   },
   {
     "revision": "5ac96f5b97578f95d476",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/compare_prices/static/media/SFUIText-Light.433cdd63.otf"
   },
   {
-    "revision": "f87b10ceb29557594395a464b34738ac",
-    "url": "/compare_prices/static/media/image_info2.f87b10ce.jpg"
+    "revision": "ab81f5a819cf5aa96ffa344c375a4092",
+    "url": "/compare_prices/static/media/image_info2.ab81f5a8.jpg"
   }
 ]);
