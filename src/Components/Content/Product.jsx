@@ -10,6 +10,18 @@ export default function Product(props) {
   return (
     // <div key={product.id} className={`${style.product} ${product.isLowest ? style.lowest : ''}`} >
     <div key={product.id} className={style.product} >
+
+      <div className={style.row}>
+        <label htmlFor={"weight" + props.index}>вес</label>
+        <input
+          id={"weight" + props.index}
+          type="number"
+          placeholder="800 (гр)"
+          value={product.weight}
+          onChange={event => props.onHandleWeightChange(product.id, event.target.value)}
+        />
+      </div>
+
       <div className={style.row}>
         <label htmlFor={"price" + props.index}>цена</label>
         <input
@@ -21,17 +33,6 @@ export default function Product(props) {
 
         // value={priceValue}
         // onChange={event => setPriceValue(event.target.value)}
-        />
-      </div>
-
-      <div className={style.row}>
-        <label htmlFor={"weight" + props.index}>вес</label>
-        <input
-          id={"weight" + props.index}
-          type="number"
-          placeholder="800 (гр)"
-          value={product.weight}
-          onChange={event => props.onHandleWeightChange(product.id, event.target.value)}
         />
       </div>
 

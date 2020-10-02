@@ -22,7 +22,7 @@ export default function ModalInfo(props) {
       <div className={style.modal}>
         <div className={style.modal__content}>
           <p>
-            Введите цену и вес товара
+            Введите вес и цену товара
           </p>
           <p>
             Приложение подсветит наиболее <span>выгодную</span> позицию
