@@ -8,8 +8,12 @@ export default function Product(props) {
   const removeProd = props.removeProd
 
   return (
-    // <div key={product.id} className={`${style.product} ${product.isLowest ? style.lowest : ''}`} >
     <div key={product.id} className={style.product} >
+
+      <div
+        className={style.button__removeprod}
+        onClick={() => removeProd(product.id)}
+      >✖</div>
 
       <div className={style.row}>
         <label htmlFor={"weight" + props.index}>вес</label>
@@ -44,11 +48,6 @@ export default function Product(props) {
           {product.result}
         </div>
       </div>
-
-      <button
-        className={style.button__removeprod}
-        onClick={() => removeProd(product.id)}
-      >+</button>
 
     </div>
   )
