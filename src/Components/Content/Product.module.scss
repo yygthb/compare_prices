@@ -72,13 +72,13 @@ input[type=number] {
   }
 
   .button__removeprod {
-    display: none;
+    // display: none;
 
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     border: none;
     position: absolute;
-    top: -15px;
+    top: -13px;
     right: 2px;
 
     color: var(--colorCancel);

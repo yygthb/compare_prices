@@ -4,7 +4,8 @@ import style from './Product.module.scss'
 
 export default function Product(props) {
   const product = props.product
-  const colored = product.id === props.coloredId
+  // const colored = product.id === props.coloredId
+  const colored = product.isLowest === true
   const removeProd = props.removeProd
 
   return (
@@ -12,8 +13,11 @@ export default function Product(props) {
 
       <div
         className={style.button__removeprod}
-        onClick={() => removeProd(product.id)}
-      >✖</div>
+        onClick={() => removeProd(product.id, props.index)}
+      >
+        {/* ✖ */}
+        ❌
+      </div>
 
       <div className={style.row}>
         <label htmlFor={"weight" + props.index}>вес</label>

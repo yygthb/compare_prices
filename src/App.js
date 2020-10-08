@@ -16,11 +16,11 @@ function App() {
   }
 
   const [products, setProd] = React.useState([
-    { id: 0, price: '', weight: '', result: '' },
-    // { id: 1, price: '', weight: '', result: '' },
-    // { id: 2, price: '', weight: '', result: '' },
+    // { id: 1, price: 125, weight: 800, result: 15.62, isLowest: false },
+    // { id: 5, price: 100, weight: 700, result: 14.28, isLowest: true },
+    // { id: 7, price: 150, weight: 900, result: 16.66, isLowest: false },
+    { id: 1, price: '', weight: '', result: '', isLowest: false },
   ])
-  const [coloredId, setColorId] = React.useState('')
   const [modalVisibility, setModalVisibility] = React.useState('hidden')
 
   function addProd() {
@@ -30,6 +30,7 @@ function App() {
         price: "",
         weight: "",
         result: "",
+        isLowest: false,
       }, ...products]
     )
   }
@@ -40,59 +41,66 @@ function App() {
     return result.toFixed(2)
   }
 
-  function sortByResult(arr) {
-    arr.sort((a, b) => +a.result > +b.result ? 1 : -1)
-    return arr[0].id
+  function showLowest(arr = products) {
+    const sup = [...arr]
+    sup.sort((a, b) => +a.result > +b.result ? 1 : -1)
+    arr.forEach(p => {
+      p.id === sup[0].id ? p.isLowest = true : p.isLowest = false
+    })
   }
 
-  function showLowest() {
-    const sup = []
-    products.forEach(product => {
-      sup.push({ id: product.id, result: product.result })
-    })
-    sortByResult(sup)
-    return sup[0].id
+  function onHandleChange(id, value, field) {
+    if (value >= 0) {
+      setProd(
+        products.map(product => {
+          if (product.id === id) {
+            product[field] = value
+            product.result = +calculate(product.price, product.weight)
+            showLowest()
+          }
+          return product
+        })
+      )
+    }
   }
 
   function onHandlePriceChange(id, value) {
-    if (value >= 0) {
-      setProd(
-        products.map(product => {
-          if (product.id === id) {
-            product.price = value
-            product.result = +calculate(product.price, product.weight)
-          }
-          setColorId(
-            showLowest()
-          )
-          return product
-        })
-      )
-    }
+    onHandleChange(id, value, 'price')
   }
 
   function onHandleWeightChange(id, value) {
-    if (value >= 0) {
-      setProd(
-        products.map(product => {
-          if (product.id === id) {
-            product.weight = value
-            product.result = +calculate(product.price, product.weight)
-          }
-          setColorId(
-            showLowest()
-          )
-          return product
-        })
-      )
-    }
+    onHandleChange(id, value, 'weight')
   }
 
-  function removeProd(id) {
-    setProd(
-      products.filter(p => p.id !== id)
-    )
-  }
+  // function onHandlePriceChange(id, value) {
+  //   if (value >= 0) {
+  //     setProd(
+  //       products.map(product => {
+  //         if (product.id === id) {
+  //           product.price = value
+  //           product.result = +calculate(product.price, product.weight)
+  //           showLowest()
+  //         }
+  //         return product
+  //       })
+  //     )
+  //   }
+  // }
+
+  // function onHandleWeightChange(id, value) {
+  //   if (value >= 0) {
+  //     setProd(
+  //       products.map(product => {
+  //         if (product.id === id) {
+  //           product.weight = value
+  //           product.result = +calculate(product.price, product.weight)
+  //           showLowest()
+  //         }
+  //         return product
+  //       })
+  //     )
+  //   }
+  // }
 
   function removeAll() {
     setProd(
@@ -101,16 +109,23 @@ function App() {
         price: "",
         weight: "",
         result: "",
+        isLowest: false,
       }]
     )
   }
 
-  function showModal() {
-    // console.log('--------------------')
-    // console.log('      info products: ', products)
-    // console.log('      info coloredId: ', coloredId)
-    // console.log('--------------------')
+  function removeProd(id, index) {
+    const prods = [...products]
+    if (prods.length !== 1) {
+      prods.splice(index, 1)
+      showLowest(prods)
+      setProd(prods)
+    } else {
+      removeAll()
+    }
+  }
 
+  function showModal() {
     setModalVisibility('visible')
   }
 
@@ -123,7 +138,6 @@ function App() {
       <Header showInfo={showModal} />
       <Content
         products={products}
-        coloredId={coloredId}
         addProd={addProd}
         removeProd={removeProd}
         onHandlePriceChange={onHandlePriceChange}
