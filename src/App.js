@@ -72,36 +72,6 @@ function App() {
     onHandleChange(id, value, 'weight')
   }
 
-  // function onHandlePriceChange(id, value) {
-  //   if (value >= 0) {
-  //     setProd(
-  //       products.map(product => {
-  //         if (product.id === id) {
-  //           product.price = value
-  //           product.result = +calculate(product.price, product.weight)
-  //           showLowest()
-  //         }
-  //         return product
-  //       })
-  //     )
-  //   }
-  // }
-
-  // function onHandleWeightChange(id, value) {
-  //   if (value >= 0) {
-  //     setProd(
-  //       products.map(product => {
-  //         if (product.id === id) {
-  //           product.weight = value
-  //           product.result = +calculate(product.price, product.weight)
-  //           showLowest()
-  //         }
-  //         return product
-  //       })
-  //     )
-  //   }
-  // }
-
   function removeAll() {
     setProd(
       [{

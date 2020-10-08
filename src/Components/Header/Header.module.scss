@@ -1,43 +1,44 @@
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   position: relative;
 
-  h1 {
-    font-size: 1.6rem;
-    // color: $infoColor;
-    color:  var(--colorInfo);
-  }
-
-  .button__info {
-    font-style: italic;
-
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1.5px solid  var(--colorInfo);
-    color:  var(--colorInfo);
-    font-weight: bold;
-    background-color: var(--backgroundBody);
-
-    margin-left: 7px;
-    margin-bottom: 17px;
-    
-    // position: absolute;
-    // top: 5px;
-    // right: 5px;
-
-    &:focus {
-      outline: none;
+  // .header__title {
+    h1 {
+      font-size: 1.5rem;
+      color:  var(--colorInfo);
     }
-    &:hover {
-      background-color: var(--colorInfoLight);
+
+    .button__info {
+      font-style: italic;
+
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      border: 1.5px solid  var(--colorInfo);
+      color:  var(--colorInfo);
+      font-weight: bold;
+      background-color: var(--backgroundBody);
+
+      margin-left: 5px;
+
+      position: absolute;
+      // top: 5px;
+      // right: 5px;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: var(--colorInfoLight);
+      }
+      &:active {
+        background-color: var(--colorInfo);
+        color: var(--backgroundInput);
+      }
     }
-    &:active {
-      background-color: var(--colorInfo);
-      color: var(--backgroundInput);
-    }
-  }
+  // }
 }

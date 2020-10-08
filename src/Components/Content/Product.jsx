@@ -4,7 +4,6 @@ import style from './Product.module.scss'
 
 export default function Product(props) {
   const product = props.product
-  // const colored = product.id === props.coloredId
   const colored = product.isLowest === true
   const removeProd = props.removeProd
 
@@ -20,7 +19,7 @@ export default function Product(props) {
       </div>
 
       <div className={style.row}>
-        <label htmlFor={"weight" + props.index}>вес</label>
+        <span htmlFor={"weight" + props.index}>вес</span>
         <input
           id={"weight" + props.index}
           type="number"
@@ -31,7 +30,7 @@ export default function Product(props) {
       </div>
 
       <div className={style.row}>
-        <label htmlFor={"price" + props.index}>цена</label>
+        <span htmlFor={"price" + props.index}>цена</span>
         <input
           id={"price" + props.index}
           type="number"
@@ -45,9 +44,9 @@ export default function Product(props) {
       </div>
 
       <div className={style.row}>
-        {/* <label className={style.label__info}>
+        {/* <span className={style.label__info}>
           цена за 100гр
-        </label> */}
+        </span> */}
         <div className={`${style.result} ${colored ? style.lowest : ''}`}>
           {product.result}
         </div>

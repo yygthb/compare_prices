@@ -7,13 +7,13 @@ export default function Header(props) {
     <header className={style.header}>
       <h1>
         Сравни цену
-        {/* XXXXXXXXXXXX */}
+        
+        <button
+          className={style.button__info}
+          title="справка"
+          onClick={() => props.showInfo()}
+        >i</button>
       </h1>
-      <button
-        className={style.button__info}
-        title="справка"
-        onClick={() => props.showInfo()}
-      >i</button>
     </header>
   )
 }
