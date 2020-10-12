@@ -1,17 +1,19 @@
-### React учебный проект
-Динамическое сравнение цен
+### [Сравни цену] - учебный проект на React
 
---------------
+(https://yygthb.github.io/compare_prices/)
+
+Динамическое **сравнение цен** - приложение высчитывает цену "продукта" за 100гр, подсвечивая позицию с наиболее выгодной ценой.
+- добавление продукта
+- вычисление: результат = (цена / вес) * 100
+- удаление продукта
+- удаление всех продуктов
+- справка в модальном окне по клику
+- 3 цветовые темы (выбор цветовой темы сохраняется в localhost)
+
+------------
+------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#### Available Scripts
 
-In the project directory, you can run:
-
-#### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[Сравни цену]: <https://yygthb.github.io/compare_prices/>
