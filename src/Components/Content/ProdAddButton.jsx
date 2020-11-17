@@ -1,5 +1,4 @@
 import React from 'react'
-
 import styles from './ProdAddButton.module.scss'
 
 export default function ProdAddButton(props) {
@@ -11,7 +10,7 @@ export default function ProdAddButton(props) {
         className={styles.button_addprod}
         title="add new product"
         onClick={() => addProd()}
-      >+</button>
+      ></button>
     </div>
   )
 }

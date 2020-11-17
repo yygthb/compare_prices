@@ -1,5 +1,6 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/accessible-emoji */
 
+import React from 'react'
 import style from './Product.module.scss'
 
 export default function Product(props) {
@@ -14,8 +15,7 @@ export default function Product(props) {
         className={style.button__removeprod}
         onClick={() => removeProd(product.id, props.index)}
       >
-        {/* ✖ */}
-        ❌
+        <span role="img">❌</span>
       </div>
 
       <div className={style.row}>
@@ -37,7 +37,6 @@ export default function Product(props) {
           placeholder="125 (р)"
           value={product.price}
           onChange={event => props.onHandlePriceChange(product.id, event.target.value)}
-
         // value={priceValue}
         // onChange={event => setPriceValue(event.target.value)}
         />

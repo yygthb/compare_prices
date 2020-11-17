@@ -13,7 +13,7 @@
     color: var(--colorCancel);
     
     span {
-      opacity: .5;
+      opacity: .75;
     }
 
     .theme__item {
@@ -42,10 +42,11 @@
     padding: 7px 10px;
     background-color: var(--backgroundBody);
     border: 1.5px solid var(--colorCancel);
-    border-radius: 7px;
+    border-radius: 10px;
     color: var(--colorCancel);
     font-size: 1rem;
     outline: none;
+    cursor: pointer;
 
     &:focus {
       outline: none;

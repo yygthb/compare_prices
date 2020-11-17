@@ -61,6 +61,7 @@ $buttonColor: rgba($color: #000000, $alpha: .6);
         color: $buttonColor;
         outline: none;
         font-size: 1.2rem;
+        cursor: pointer;
 
         &:hover {
           background-color: rgba(#aeaeae, 0.3);

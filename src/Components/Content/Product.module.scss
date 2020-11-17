@@ -42,7 +42,8 @@ input[type=number] {
       color: var(--colorTextBody);
       outline: none;
       border: 1.5px solid var(--colorPrimaryBorder);
-      border-radius: 10px;
+      // border-radius: 10px;
+      border-radius: 15px;
 
       &::placeholder {
         color: var(--colorTextPlaceholder);
@@ -60,7 +61,8 @@ input[type=number] {
       // padding: 1px;
       text-align: center;
       border: 1.5px solid var(--colorPrimaryBorder);
-      border-radius: 10px;
+      // border-radius: 10px;
+      border-radius: 15px;
       font-size: 1.5rem;
       font-weight: bold;
       background-color: var(--backgroundInput);
@@ -72,14 +74,12 @@ input[type=number] {
   }
 
   .button__removeprod {
-    // display: none;
-
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     border: none;
     position: absolute;
-    top: -11px;
-    right: 2px;
+    top: 1px;
+    right: 15px;
 
     color: var(--colorCancel);
     background-color: rgba(grey, 0.0);

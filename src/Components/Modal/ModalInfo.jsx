@@ -1,7 +1,5 @@
 import React from 'react'
-
 import style from './ModalInfo.module.scss'
-
 import img from '../../img/image_info2.jpg'
 
 export default function ModalInfo(props) {

@@ -1,7 +1,5 @@
 import React from 'react'
-
 import Product from './Product'
-
 import ProdAddButton from './ProdAddButton'
 
 export default function Content(props) {
@@ -10,6 +8,8 @@ export default function Content(props) {
   return (
     <main>
 
+      <ProdAddButton addProd={props.addProd} />
+      
       {
         products.map((p, index) => {
           return <Product
@@ -24,7 +24,6 @@ export default function Content(props) {
         })
       }
 
-      <ProdAddButton addProd={props.addProd} />
     </main>
   )
 }
